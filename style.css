@@ -195,7 +195,6 @@ margin-top: 30px ;
     display: flex;
     height: 260px;
     width: 360px;
-    /*background-image: url(img/category_women.png);*/
     position: relative;
     justify-content: center;
 }
@@ -205,7 +204,6 @@ margin-top: 30px ;
     position: relative;
     height: 260px;
     width: 360px;
-    /*background-image: url(img/category_men.png);*/
 }
 .categories__kids {
     display: flex;
@@ -213,14 +211,12 @@ margin-top: 30px ;
     position: relative;
     height: 260px;
     width: 360px;
-    /*background-image: url(img/category_kids.png);*/
     }
 .categories__accesories {
     position: relative;
     height: 180px;
     width: 1140px;
     margin-top: 30px;
-    /*background-image: url(img/category_accesories.png);*/
 }
 
 .items__section {
