@@ -289,7 +289,6 @@ margin-top: 30px ;
 .subscribe {
     background-image: url(img/background_subscribe.png);
     background-position: center;
-    background-size: 100%;
     background-repeat: no-repeat;
    
 }
@@ -305,15 +304,43 @@ margin-top: 30px ;
 }
 
 .subscribe__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    width: 350px ;
+    width: 350px;
 }
-
+.subscribe__info_photo {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    background-image: url(img/subscribe_photo.png);
+}
 .subscribe__form {
     text-align: center;
     width: 356px ;
 }
+.subscribe__form_email {
+    display: flex;
+    margin-top: 32px;
+}
+.subscribe__form_input {
+    width: 256px;
+    height: 50px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    background-color: #E1E1E1;
+    padding-left: 22px;
+}
 
+.subscribe__form_button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #F16D7F;
+    text-align: center;
+}
 .footer {
     background-color: #222224;
     padding-top: 30px;
