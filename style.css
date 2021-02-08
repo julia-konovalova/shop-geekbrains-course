@@ -17,17 +17,17 @@ h1 {
     line-height: 58px;
     color: #222222;
 }
-h3 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    color: #222222;
-}
 
 h2 {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    color: #222222;
+}
+h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
     color: #222222;
 }
 
@@ -40,6 +40,7 @@ h4 {
 .text_color {
     color:#F16D7F;
 }
+
 .top__heading_textcolor {
     font-weight: 700;
     font-size: 32px;
@@ -53,6 +54,7 @@ line-height: 36px;
 font-weight: 400;
 color: #222222;
 }
+
 .items__heading_paragraph {
     font-size: 14px;
     line-height: 17px;
@@ -60,7 +62,7 @@ color: #222222;
     color: #9F9F9F;
 }
 
-.items__cards_heading {
+.card__heading {
 font-size: 13px;
 line-height: 16px;
 font-weight: 400;
@@ -68,7 +70,7 @@ color: #000000;
 margin-bottom: 13px;
 }
 
-.items__cards_paragraph {
+.card__description{
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -76,18 +78,20 @@ margin-bottom: 13px;
     margin-bottom: 18px;
 }
 
-.items__cards_price {
+.card_price {
     font-size: 16px;
 line-height: 19px;
 font-weight: 400;
 color: #F16D7F;
 }
+
 .feature__item_heading {
     font-size: 20px;
 line-height: 24px;
 font-weight: 400;
 color: #FBFBFB;
 }
+
 .feature__item_desc {
     font-weight: 300;
 font-size: 14px;
@@ -103,7 +107,7 @@ color: #222224;
 margin-top: 30px ;
 }
 
-.footer__copy_text {
+.copyright {
     color: #FBFBFB;
     font-size: 16px;
     line-height: 19px;
@@ -112,6 +116,7 @@ margin-top: 30px ;
 
 /*Стили блоков на главной странице*/
 
+/*Хэдер и меню*/
 .header {
     width: 100%;
     height: 75px;
@@ -135,32 +140,58 @@ margin-top: 30px ;
 .navbar__logo {
     margin-right: 41px;
 }
-.menu {
+.menu__icon {
     margin-right: 33px;
 }
 .navbar__userpage {
     margin-right: 33px;
 }
+
+/*Стили верхнего блока с большой картинкой*/
 .top {
     background-color: #F1E4E6;
     display: flex;
     justify-content: center;
+    position: relative;
 }
+
+/*.top__hover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu__icon: .top__hover {
+visibility: visible;
+opacity: 1;
+}*/
+
 .top__wrapper {
     width: 1140px;
     display: flex;
     justify-content: space-between;
     align-items: center; 
 }
-.top__heading {
-    width: 377px;
-    position: relative;
+
+.top__img {
+    background-image: url(img/top_img.png);
+    background-repeat: no-repeat;
+ width: 400px;
+    height: 764px;
+    background-color:  #F1E4E6;
 }
-.top__heading_bar {
-    position: absolute;
-    left: -20px;
+.top__heading {
+  border-left: 12px solid #F16D7F;
+  padding-left: 16px;
+  margin-right: 120px;
 }
 
+/*Стили блока с категориями товаров*/
 .categories {
     margin-top: 65px;
     margin-bottom: 96px;
@@ -219,6 +250,8 @@ margin-top: 30px ;
     margin-top: 30px;
 }
 
+/*Стили блока с карточками товаров*/
+
 .items__section {
     width: 1140px;
     margin: 0 auto 96px;
@@ -236,17 +269,67 @@ margin-top: 30px ;
     margin-bottom: 48px;
 }
 
-.items__cards_item {
+.card {
     display: flex;
     flex-direction: column;
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
+    height: 581px;
     margin-bottom: 30px ;
-    background-color: #F8F8F8;
+    
+}
+.card__picture{
+   position: relative;
+   width: 100%;  
+}
+.card__img{
+max-width: 100%;
+height: auto;
+align-self: flex-start;
+}
+.card__hover {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(58, 56, 56, 0.86);
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.3s ease;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.items__cards_desc {
+.card__picture:hover .card__hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card__button {
+height: 43px;
+width: 138px;
+background: none;
+border: 1px solid #FFFFFF;
+font-size: 14px;
+line-height: 16px;
+}
+
+.card__button:hover {
+    border-color:  #FF6A6A;
+    background-color: #FF6A6A;
+}
+.card__button_icon {
+    color:  white;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card__info {
     padding: 25px 28px 20px 16px;
     text-align: left;
+    background-color: #F8F8F8;
 }
 
 .items__section_button {
@@ -256,7 +339,16 @@ margin-top: 30px ;
     height: 47px;
     border: 1px solid #FF6A6A;
     padding: 14px;
+    color: #FF6A6A;
+    font-size: 16px;
 }
+
+.items__section_button:hover {
+    color: white;
+    background-color:  #FF6A6A;
+}
+
+/*Стили блока с преимуществами*/
 
 .feature {
     background-color:  #222224;
@@ -276,11 +368,21 @@ margin-top: 30px ;
    width: 360px;
     text-align: center;
 }
+.feature__item_icon {
+text-align: center;
+color: #F16D7F;
+width: 50px;
+height: 50px;
+line-height: 50px;
+font-size: 32px;
+}
 
 .feature__item_heading_wrap {
     padding-top: 25px;
     padding-bottom: 16px;
 }
+
+/*Стили блока с формой подписки*/
 
 .subscribe {
     background-image: url(img/background_subscribe.png);
@@ -337,12 +439,14 @@ margin-top: 30px ;
     background-color: #F16D7F;
     text-align: center;
 }
+
+/*Стили футера*/
+
 .footer {
     background-color: #222224;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
 
 .footer__wrapper {
     width: 1140px;
@@ -350,4 +454,25 @@ margin-top: 30px ;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
+}
+
+.footer__socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.footer__socialmedia_icon {
+text-align: center;
+background-color: white;
+color: #000000;
+width: 32px;
+height: 32px;
+line-height: 32px;
+font-size: 18px;
+}
+
+.footer__socialmedia_icon:hover {
+    background-color: #F16D7F;
+ color: white;
 }
