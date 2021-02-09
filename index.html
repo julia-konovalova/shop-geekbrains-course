@@ -24,14 +24,31 @@
                     <img src="img/menu.svg" alt="menu">
                 </div>
                 <div class="navbar__userpage">
-                    <img src="img/userpage.svg" alt="userpage">
+                    <a href="registration"><img src="img/userpage.svg" alt="userpage"></a>
                 </div>
                 <div class="basket">
-                    <img src="img/basket.svg" alt="basket">
+                    <a href="cart"><img src="img/basket.svg" alt="basket"></a>
                 </div>
             </nav>
         </div>
     </header>
+    <section class="overlay">
+        <nav class="menu">
+            <button class="menu__close_button">x</button>
+            <span class="menu__title">MENU</span>
+
+            <select name="MAN" id="" class="menu__category">
+                <option value="MAN"><a href="#">MAN</a></option>
+                <option value="Accessories"><a href="#">Accessories</a></option>
+                <option value="Bags"><a href="#">Bags</a></option>
+                <option value="Denim"><a href="#">Denim</a></option>
+                <option value="T-Shirts"><a href="#">T-Shirts</a></option>
+            </select>
+            </a>
+            <a href="catalog.html" class="menu__category">WOMAN</a>
+            <a href="catalog.html" class="menu__category">KIDS</a>
+        </nav>
+    </section>
     <section class="top">
         <div class="top__wrapper">
             <div class="top__img">
@@ -42,36 +59,35 @@
                 </h3>
             </div>
         </div>
-        <div class="top__hover"></div>
     </section>
     <main class="categories">
         <div class="categories__wrapper">
-            <div class="categories__women">
-                <img src="img/category_women.png" alt="for_women">
-                <div class="categories__label">
-                    <span class=categories__label_offer>30% OFF</span>
-                    <h2 class=text_color>FOR WOMEN</h2>
+            <div class="categories__row_high">
+                <div class="categories__item categories__women">
+                    <a class="categories__button" href="catalog.html">
+                        <span class="categories__label_offer">30% OFF</span>
+                        <h2 class="text_color categories__title">FOR WOMEN</h2>
+                    </a>
+                </div>
+                <div class="categories__item categories__men">
+                    <a class="categories__button" href="catalog.html">
+                        <span class="categories__label_offer">30% OFF</span>
+                        <h2 class="text_color categories__title">FOR MEN</h2>
+                    </a>
+                </div>
+                <div class="categories__item categories__kids">
+                    <a class="categories__button" href="catalog.html">
+                        <span class="categories__label_offer">30% OFF</span>
+                        <h2 class="text_color categories__title">FOR KIDS</h2>
+                    </a>
                 </div>
             </div>
-            <div class="categories__men">
-                <img src="img/category_men.png" alt="for_men">
-                <div class="categories__label">
-                    <span class=categories__label_offer>HOT DEAL</span>
-                    <h2 class=text_color>FOR MEN</h2>
-                </div>
-            </div>
-            <div class="categories__kids">
-                <img src="img/category_kids.png" alt="for_kids">
-                <div class="categories__label">
-                    <span class=categories__label_offer> NEW ARRIVALS</span>
-                    <h2 class=text_color>FOR KIDS</h2>
-                </div>
-            </div>
-            <div class="categories__accesories">
-                <img src="img/category_accesories.png" alt="img_accesories">
-                <div class="categories__label_wideblock">
-                    <span class=categories__label_offer> LUXIROUS & TRENDY</span>
-                    <h2 class=text_color>ACCESORIES</h2>
+            <div class="categories__row_short">
+                <div class="categories__accesories">
+                    <a class="categories__button" href="catalog.html">
+                        <span class="categories__label_offer">30% OFF</span>
+                        <h2 class="text_color categories__title">ACCESSORIES</h2>
+                    </a>
                 </div>
             </div>
         </div>
@@ -87,10 +103,11 @@
                 <div class="card__picture">
                     <img src="img/item_card1.png" class="card_img" alt="item">
                     <div class="card__hover">
-                        <button class="card__button">
-                            <span class="card__button_icon"><i class="fal fa-shopping-cart"></i>Add to
+                        <a href="cart.html" class="card__button">
+                            <img class="card__button_icon" src="img/basket.svg" alt="shopcart">
+                            <span class="card__button_text">Add to
                                 Cart</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <figcaption class="card__info">
@@ -105,10 +122,11 @@
                 <div class="card__picture">
                     <img src="img/item_card2.png" class="card_img" alt="item">
                     <div class="card__hover">
-                        <button class="card__button">
-                            <span class="card__button_icon"><i class="fal fa-shopping-cart"></i>Add to
+                        <a href="cart.html" class="card__button">
+                            <img class="card__button_icon" src="img/basket.svg" alt="shopcart">
+                            <span class="card__button_text">Add to
                                 Cart</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <figcaption class="card__info">
@@ -123,10 +141,11 @@
                 <div class="card__picture">
                     <img src="img/item_card3.png" class="card_img" alt="item">
                     <div class="card__hover">
-                        <button class="card__button">
-                            <span class="card__button_icon"><i class="fal fa-shopping-cart"></i>Add to
+                        <a href="cart.html" class="card__button">
+                            <img class="card__button_icon" src="img/basket.svg" alt="shopcart">
+                            <span class="card__button_text">Add to
                                 Cart</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <figcaption class="card__info">
@@ -141,10 +160,11 @@
                 <div class="card__picture">
                     <img src="img/item_card4.png" class="card_img" alt="item">
                     <div class="card__hover">
-                        <button class="card__button">
-                            <span class="card__button_icon"><i class="fal fa-shopping-cart"></i>Add to
+                        <a href="cart.html" class="card__button">
+                            <img class="card__button_icon" src="img/basket.svg" alt="shopcart">
+                            <span class="card__button_text">Add to
                                 Cart</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <figcaption class="card__info">
@@ -159,10 +179,11 @@
                 <div class="card__picture">
                     <img src="img/item_card5.png" class="card_img" alt="item">
                     <div class="card__hover">
-                        <button class="card__button">
-                            <span class="card__button_icon"><i class="fal fa-shopping-cart"></i>Add to
+                        <a href="cart.html" class="card__button">
+                            <img class="card__button_icon" src="img/basket.svg" alt="shopcart">
+                            <span class="card__button_text">Add to
                                 Cart</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <figcaption class="card__info">
@@ -177,10 +198,11 @@
                 <div class="card__picture">
                     <img src="img/item_card6.png" class="card_img" alt="item">
                     <div class="card__hover">
-                        <button class="card__button">
-                            <span class="card__button_icon"><i class="fal fa-shopping-cart"></i>Add to
+                        <a href="cart.html" class="card__button">
+                            <img class="card__button_icon" src="img/basket.svg" alt="shopcart">
+                            <span class="card__button_text">Add to
                                 Cart</span>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <figcaption class="card__info">
@@ -192,12 +214,13 @@
                 </figcaption>
             </figure>
         </div>
-        <div class="items__section_button"> <span class=items__cards_price> Browse All Product</span></div>
+        <a href="catalog.html" class="items__section_button">Browse All Product</a>
+
     </section>
     <section class="feature">
         <div class="feature__wrapper">
             <div class="feature__item">
-                <div class="feature__item_icon"><i class="fal fa-truck"></i></div>
+                <div class="feature__item_icon"> <img src="img/feature_icon1.svg" alt="delivery"> </div>
                 <div class="feature__item_heading_wrap"><span class="feature__item_heading">
                         Free Delivery</span>
                 </div>
@@ -206,7 +229,7 @@
                 </p>
             </div>
             <div class="feature__item">
-                <div class="feature__item_icon"></div>
+                <div class="feature__item_icon"> <img src="img/feature_icon2.svg" alt="discount"> </div>
                 <div class="feature__item_heading_wrap"><span class="feature__item_heading">
                         Sales & discounts</span>
                 </div>
@@ -215,7 +238,7 @@
                 </p>
             </div>
             <div class="feature__item">
-                <div class="feature__item_icon"></div>
+                <div class="feature__item_icon"> <img src="img/feature_icon3.svg" alt="quality"> </div>
                 <div class="feature__item_heading_wrap"><span class="feature__item_heading">
                         Quality assurance</span>
                 </div>
