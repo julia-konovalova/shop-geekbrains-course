@@ -171,7 +171,7 @@ pointer-events: none;
 .menu {
     width: 232px;
     height: 100%;
-    max-height: 768px;
+    max-height:calc(100vh - 75px);
     padding: 16px 34px;
     background-color: #fff;
     position: absolute;
