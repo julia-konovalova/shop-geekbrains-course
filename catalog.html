@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
 
 </head>
 
@@ -65,10 +65,107 @@
             </div>
         </div>
     </nav>
-    <main class="items__section">
-        <div class="filters">
-
+    <section class="filters">
+        <div class="filters__wrapper">
+            <div class="filter__column">
+                <details class="filter__main">
+                    <summary class="filter__main__summary">
+                        <span class="filter__main_title">FILTER</span>
+                        <div class="filter_icon">
+                        </div>
+                    </summary>
+                    <details class="filter__main_category">
+                        <summary class="filter__main_category_summary">
+                            <span>CATEGORY</span>
+                        </summary>
+                        <li>Accessories</li>
+                        <li>Bags</li>
+                        <li>Denim</li>
+                        <li>Hoodies & Sweatshirts</li>
+                        <li>Jackets & Coats</li>
+                        <li>Polos</li>
+                        <li>Shirts</li>
+                        <li>Shoes</li>
+                        <li>Sweaters & Knits</li>
+                        <li>T-Shirts</li>
+                        <li>Tanks</li>
+                    </details>
+                    <details class="filter__main_category">
+                        <summary class="filter__main_category_summary">
+                            <span>BRAND</span>
+                        </summary>
+                        <li>Mango</li>
+                        <li>SELA</li>
+                        <li>Nike</li>
+                        <li>Ecco</li>
+                    </details>
+                    <details class="filter__main_category">
+                        <summary class="filter__main_category_summary">
+                            <span>DESIGNER</span>
+                        </summary>
+                        <li>Mango</li>
+                        <li>SELA</li>
+                        <li>Nike</li>
+                        <li>Ecco</li>
+                    </details>
+                </details>
+            </div>
+            <div class="filter__column">
+                <details class="filter__trending">
+                    <summary class="filter__trending_summary">
+                        <div class="filter__title">
+                            <span>TRENDING NOW</span>
+                            <img class="filter_arrow" src="img/filter_arrow.svg" alt="filter">
+                        </div>
+                    </summary>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                </details>
+                <details class="filter__size">
+                    <summary class="filter__size_summary">
+                        <div class="filter__title">
+                            <span>SIZE</span>
+                            <img class="filter_arrow" src="img/filter_arrow.svg" alt="filter">
+                        </div>
+                    </summary>
+                    <div class="filter__size_checkbox">
+                        <div>
+                            <input type="checkbox" name="xs" id="">
+                            <label for="xs" class="filter__size_checkbox_text">XS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="s" id="">
+                            <label for="s" class="filter__size_checkbox_text">S</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="m" id="">
+                            <label for="m" class="filter__size_checkbox_text">M</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="l" id="">
+                            <label for="l" class="filter__size_checkbox_text">L</label>
+                        </div>
+                    </div>
+                </details>
+                <details class="filter__price">
+                    <summary class="filter__price_summary">
+                        <div class="filter__title">
+                            <span>PRICE</span>
+                            <img class="filter_arrow" src="img/filter_arrow.svg" alt="filter">
+                        </div>
+                    </summary>
+                    <input class="filter__price_input" type="number" id="price" name="price" min="199" max="3520"
+                        placeholder="from 199">
+                    <input class="filter__price_input" type="number" id="price" name="price" min="199" max="3520"
+                        placeholder="to 3520">
+                </details>
+            </div>
         </div>
+    </section>
+    <main class="items__section">
         <div class="items__cards">
             <figure class="card">
                 <div class="card__picture">

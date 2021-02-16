@@ -345,7 +345,10 @@ height: 180px;
     width: 100%;
     max-width: 360px;
     height: 581px;
-    margin-bottom: 30px ;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: none;
+    background-color:#F8F8F8;
     
 }
 .card__picture{
@@ -409,7 +412,7 @@ padding-right: 13px;
 }
 
 .card__info {
-    padding: 25px 28px 20px 16px;
+    padding: 25px 28px 0px 16px;
     text-align: left;
     background-color: #F8F8F8;
 }
@@ -564,32 +567,3 @@ font-size: 18px;
  color: white;
 }
 
-/* Стили каталога*/
-.navigation {
-    background-color: #F8F3F4;
-
-}
-
-.navigation__wrapper {
-    margin: 0 auto;
-    max-width: 1140px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    height: 148px;
-    align-items: center;
-}
-
-.breadcrumb__link {
-    text-decoration: none;
-    color: #636363;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.breadcrumb__link_active {
-    text-decoration: none;
-    color: #F16D7F;
-    font-size: 14px;
-    font-weight: 700;
-}
