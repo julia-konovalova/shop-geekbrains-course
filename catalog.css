@@ -89,17 +89,6 @@ display: flex;
     color: #EF5B70;
 }
 
-.filter_icon {
-    background-image: url(img/filter_icon.svg);
-    height: 10px;
-    width: 15px;
-    background-repeat: no-repeat;
-}
-
-.filter__main[open] .filter_icon {
-    background-image: url(img/filter_icon_color.svg);
-}
-
 .filter__main_category {
     margin-top: 18px; 
 }
@@ -133,6 +122,54 @@ display: flex;
 .filter__main_category[open] .filter__main_category_summary {
     color: #EF5B70;
 }
+
+.filter__sorting {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    padding-top: 6px;
+    user-select: none;
+    display: block;
+    transition: max-height 0.3s ease-in, box-shadow 0.2s ease;
+}
+.sorting_icon {
+    background-image: url(img/filter_icon.svg);
+    height: 10px;
+    width: 15px;
+    background-repeat: no-repeat;
+}
+
+.filter__sorting[open] .sorting_icon {
+    background-image: url(img/filter_icon_color.svg);
+}
+
+.filter__sorting[open] {
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    max-width: 200px;
+    max-height: 200px;
+    z-index: 2;
+    top: 0px;
+    padding-left: 10px;
+
+}
+.filter__sorting_summary {
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.filter__sorting li {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 17px;
+    color: #6F6E6E;
+    list-style: none;
+    margin-bottom: 11px;
+    margin-right: 10px;
+    
+}
+
 
 .filter__trending {
         position: absolute;
