@@ -155,6 +155,7 @@ margin-top: 30px ;
 .navbar__userpage {
     margin-right: 33px;
 }
+
 /*Выезжающее меню*/
 .overlay {
     position: fixed;
@@ -200,6 +201,36 @@ pointer-events: none;
 }
 .menu__title {
     margin-top: 9px;
+}
+
+
+/*Стили строки навигации с др.страниц*/
+
+.navigation {
+    background-color: #F8F3F4;
+}
+.navigation__wrapper {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 148px;
+    align-items: center;
+}
+
+.breadcrumb__link {
+    text-decoration: none;
+    color: #636363;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.breadcrumb__link_active {
+    text-decoration: none;
+    color: #F16D7F;
+    font-size: 14px;
+    font-weight: 700;
 }
 /*Стили верхнего блока с большой картинкой*/
 .top {
@@ -415,6 +446,10 @@ padding-right: 13px;
     padding: 25px 28px 0px 16px;
     text-align: left;
     background-color: #F8F8F8;
+}
+
+.product_link {
+    text-decoration: none;
 }
 
 .items__section_button {

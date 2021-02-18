@@ -195,7 +195,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"style.css":"node_modules/style.css/style.css","_css_loader":"../../../../../Amigo/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../Amigo/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"style.css":"node_modules/style.css/style.css","./img\\filter_icon.svg":[["filter_icon.955c8c67.svg","img/filter_icon.svg"],"img/filter_icon.svg"],"./img\\filter_icon_color.svg":[["filter_icon_color.2e22e431.svg","img/filter_icon_color.svg"],"img/filter_icon_color.svg"],"_css_loader":"../../../../../Amigo/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../Amigo/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -223,7 +223,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62392" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64702" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -27,7 +27,7 @@
                     <img src="img/menu.svg" alt="menu">
                 </div>
                 <div class="navbar__userpage">
-                    <a href="registration"><img src="img/userpage.svg" alt="userpage"></a>
+                    <a href="registration.html"><img src="img/userpage.svg" alt="userpage"></a>
                 </div>
                 <div class="basket">
                     <a href="cart.html"><img src="img/basket.svg" alt="basket"></a>
@@ -37,19 +37,37 @@
     </header>
     <section class="overlay">
         <nav class="menu">
-            <button class="menu__close_button">x</button>
+            <button class="menu__close_button"><img src="img/close_icon.svg" alt="close_menu"></button>
             <span class="menu__title">MENU</span>
 
-            <select name="MAN" id="" class="menu__category">
-                <option value="MAN"><a href="#">MAN</a></option>
-                <option value="Accessories"><a href="#">Accessories</a></option>
-                <option value="Bags"><a href="#">Bags</a></option>
-                <option value="Denim"><a href="#">Denim</a></option>
-                <option value="T-Shirts"><a href="#">T-Shirts</a></option>
-            </select>
-            </a>
-            <a href="catalog.html" class="menu__category">WOMAN</a>
-            <a href="catalog.html" class="menu__category">KIDS</a>
+            <details class="menu__category">
+                <summary>
+                    <a href="catalog.html">MAN</a>
+                </summary>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">T-Shirts</a></li>
+            </details>
+            <details class="menu__category">
+                <summary>
+                    <a href="catalog.html">WOMAN</a>
+                </summary>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">T-Shirts</a></li>
+            </details>
+            <details class="menu__category">
+                <summary>
+                    <a href="catalog.html">KIDS</a>
+                </summary>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">T-Shirts</a></li>
+            </details>
+
         </nav>
     </section>
     <nav class="navigation">
@@ -61,7 +79,7 @@
         <div class="cart__wrapper">
             <div class="cart__items">
                 <figure class="cart__item">
-                    <button class="item__close_button">x</button>
+                    <button class="item__close_button"><img src="img/close_icon.svg" alt="delete"></button>
                     <img src="img/item_card3.png" alt="tshirt">
                     <figcaption class="cart__item_info">
                         <h5 class="cart__item_heading">MANGO PEOPLE T-SHIRT</h5>
@@ -75,7 +93,7 @@
                     </figcaption>
                 </figure>
                 <figure class="cart__item">
-                    <button class="item__close_button">x</button>
+                    <button class="item__close_button"><img src="img/close_icon.svg" alt="delete"></button>
                     <img src="img/item_card4.png" alt="tshirt">
                     <figcaption class="cart__item_info">
                         <h5 class="cart__item_heading">MANGO PEOPLE T-SHIRT</h5>
