@@ -282,3 +282,38 @@ display: flex;
     margin-right: 16px;
     outline: none;
 }
+
+/*Адаптация для планшета*/
+@media screen and ( max-width: 768px) {
+    
+.filters {
+    width: 768px;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+
+}
+.filter__price[open] {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background: #ffffff;
+    width: 300px;
+    max-height: 150px;
+    top: -13px;
+    left: 37px;
+    padding-left: 10px;
+    padding-top: 13px;
+    z-index: 2;
+}
+.items__section {
+    margin-bottom: 63px;
+}
+
+.items__cards {
+    max-height: 2380px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+}
