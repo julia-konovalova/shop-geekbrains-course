@@ -1,0 +1,319 @@
+@import "style.css";
+
+/* Стили каталога*/
+
+.filters {
+    background-color: #fff;
+margin-top: 51px;
+}
+
+.filters__wrapper {
+display: flex;
+
+ width: 1140px;
+ margin: 0 auto;
+    gap: 30px;
+}
+.filter__column {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    height: 30px;
+    transition: height 0.3s ease-in;
+}
+
+.filter__main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    display: block;
+    padding-bottom: 16px;
+    transition: max-height 0.3s ease-in, box-shadow 0.2s ease;
+}
+::-webkit-details-marker {display: none}
+
+.filter__main[open] {
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 360px;
+    max-height: 800px;
+    z-index: 2;
+    top: -13px;
+    padding-top: 13px;
+    padding-left: 16px;
+}
+
+.filter__main__summary {
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+.filter__main_title {
+    padding-right: 11px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+.filter__main[open] .filter__main_title {
+    color: #EF5B70;
+}
+
+.filter__main_category {
+    margin-top: 18px; 
+}
+
+.filter__main_category_summary {
+     height: 37px;
+     border-left: 5px solid  #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    outline: none;
+    padding-left: 11px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    margin-bottom: 24px;
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6F6E6E;
+    transition: color 0.2s ease;
+}
+
+.filter__main_category li {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 17px;
+    color: #6F6E6E;
+    list-style: none;
+    margin-bottom: 11px;
+    margin-left: 12px;
+}
+
+.filter__main_category[open] .filter__main_category_summary {
+    color: #EF5B70;
+}
+
+.filter__sorting {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    padding-top: 6px;
+    user-select: none;
+    display: block;
+    transition: max-height 0.3s ease-in, box-shadow 0.2s ease;
+}
+.sorting_icon {
+    background-image: url(img/filter_icon.svg);
+    height: 10px;
+    width: 15px;
+    background-repeat: no-repeat;
+}
+
+.filter__sorting[open] .sorting_icon {
+    background-image: url(img/filter_icon_color.svg);
+}
+
+.filter__sorting[open] {
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    max-width: 200px;
+    max-height: 200px;
+    z-index: 2;
+    top: 0px;
+    padding-left: 10px;
+
+}
+.filter__sorting_summary {
+    outline: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.filter__sorting li {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 17px;
+    color: #6F6E6E;
+    list-style: none;
+    margin-bottom: 11px;
+    margin-right: 10px;
+    
+}
+
+
+.filter__trending {
+        position: absolute;
+        top: 0;
+        left: 0;
+        user-select: none;
+        display: block;
+        padding-bottom: 16px;
+        transition: max-height 0.3s ease-in, box-shadow 0.2s ease;
+    
+}
+.filter__trending[open] {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background: #ffffff;
+    width: 150px;
+    max-height: 200px;
+    top: -13px;
+    left: -10px;
+    padding-left: 10px;
+    padding-top: 13px;
+    z-index: 2;
+}
+
+.filter__title {
+    padding-bottom: 16px;
+}
+
+.filter_arrow {
+    margin-left: 10px;
+}
+
+.filter__trending_summary {
+    display: flex;
+    font-size: 14px;
+    font-weight: normal;
+    color: #6F6E6E;
+    outline: none;
+}
+
+.filter__trending[open] .filter__trending_summary {
+    color:#EF5B70;
+}
+
+.filter__trending li {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 17px;
+    color: #6F6E6E;
+    list-style: none;
+    margin-bottom: 11px;
+    margin-left: 12px;
+}
+
+.filter__size {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    user-select: none;
+    display: block;
+    padding-bottom: 16px;
+    transition: max-height 0.3s ease-in, box-shadow 0.2s ease;
+}
+
+.filter__size[open] {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background: #ffffff;
+    width: 80px;
+    max-height: 150px;
+    top: -13px;
+    left: 150px;
+    padding-left: 10px;
+    padding-top: 13px;
+    z-index: 2;
+}
+
+.filter__size_summary {
+    display: flex;
+    font-size: 14px;
+    font-weight: normal;
+    color: #6F6E6E;
+    outline: none;
+    
+}
+
+.filter__size[open] .filter__size_summary {
+    color:#EF5B70;
+}
+
+.filter__size_checkbox {
+    display: flex;
+   flex-direction: column;
+}
+
+.filter__size_checkbox_text {
+    font-size: 14px;
+    font-weight: normal;
+    color: #6F6E6E;
+    padding: 0;
+}
+
+.filter__price {
+    position: absolute;
+    top: 0;
+    left:237px;
+    user-select: none;
+    display: block;
+    padding-bottom: 16px;
+    transition: max-height 0.3s ease-in, box-shadow 0.2s ease;
+}
+
+.filter__price_summary {
+    display: flex;
+    font-size: 14px;
+    font-weight: normal;
+    color: #6F6E6E;
+    outline: none;
+    
+}
+
+.filter__price[open] {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background: #ffffff;
+    width: 300px;
+    max-height: 150px;
+    top: -13px;
+    left: 237px;
+    padding-left: 10px;
+    padding-top: 13px;
+    z-index: 2;
+}
+.filter__price[open] .filter__price_summary {
+    color:#EF5B70;
+}
+
+.filter__price_input {
+    width: 120px;
+    height: 30px;
+    margin-right: 16px;
+    outline: none;
+}
+
+/*Адаптация для планшета*/
+@media screen and ( max-width: 768px) {
+    
+.filters {
+    width: 768px;
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+
+}
+.filter__price[open] {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background: #ffffff;
+    width: 300px;
+    max-height: 150px;
+    top: -13px;
+    left: 37px;
+    padding-left: 10px;
+    padding-top: 13px;
+    z-index: 2;
+}
+.items__section {
+    margin-bottom: 63px;
+}
+
+.items__cards {
+    max-height: 2380px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+}
