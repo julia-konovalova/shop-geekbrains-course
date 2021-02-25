@@ -274,3 +274,59 @@
         overflow: hidden;
     }
 }
+/*Адаптация для смартфона*/
+@media screen and (max-width: 375px) {
+
+    .carousel_bootstrap_wrapper {
+        width: 375px;
+    }
+
+    .carousel_item_img {
+        max-height: 610px;
+        max-width: 375px;
+        background-size: contain;
+    }
+
+
+    .product_info_wrapper {
+        position: static;
+        margin-bottom: 64px;
+        height: 601px;
+        width: 375px;
+        
+
+    }
+
+    .product_info {
+        align-items: center;
+        position: static;
+        width: 100%;
+        height: 601px;
+        background-color: #fff;
+        border: 1px solid #EAEAEA;
+        padding: 23px;
+    }
+.product__description {
+    max-width: 375px;
+    padding: 23px;
+}
+
+
+.product__filters{
+    width: 375px;
+    padding: 20px;
+}
+
+.product__filter {
+    
+    font-size: 10px;
+}
+    .items__cards {
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+        gap: 16px;
+        overflow: hidden;
+    }
+
+}
